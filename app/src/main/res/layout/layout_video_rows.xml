@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/sequence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="1"
+            android:layout_gravity="center"
+            android:textSize="24dp" />
+    </FrameLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardvideoview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toEndOf="@+id/frame">
+
+        <RelativeLayout
+            android:id="@+id/relCard"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imageCardView"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="10dp"
+                android:layout_centerVertical="true"
+                app:cardElevation="@dimen/cardview_default_elevation">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/v_logo" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imageCardView"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/videotitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/seougui"
+                    android:textColor="@color/black"
+                    android:text="Abcd"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/videodescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/seougui"
+                    android:text="Review"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/fav_workshop"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/content"
+                android:layout_marginTop="4dp"
+                android:layout_alignParentEnd="true"
+                android:padding="3dp"
+                android:src="@drawable/ic_favourite"
+                android:visibility="visible">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/favouriteImageview"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="4dp"
+                android:padding="3dp"
+                android:src="@drawable/ic_heart"
+                android:visibility="gone" />
+<!--
+            <TextView
+                android:id="@+id/txtvideoName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txtvideoTitle"
+                android:text="VideoName"
+                android:fontFamily="@font/metropolis"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/imageCardView"
+                android:layout_toRightOf="@+id/imageCardView"
+                android:layout_marginLeft="16dp" />
+-->
+<!--
+            <TextView
+                android:id="@+id/txtviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/metropolis"
+                android:layout_below="@+id/txtvideoName"
+                android:text="Views"
+                android:textSize="10sp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/imageCardView"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/imageCardView" />
+-->
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

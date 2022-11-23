@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectType">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <LinearLayout
+        android:id="@+id/linearlayoout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtUniversity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select University:"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/UniSelection"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/txtUniversity"
+            android:background="@drawable/spinner_bg"
+            android:hint="University">
+
+            <Spinner
+                android:id="@+id/universitySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:popupBackground="@color/icons"
+                android:textColor="@color/primaryTextColor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txtStream"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Stream:"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/DeptSelection"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/txtStream"
+            android:background="@drawable/spinner_bg"
+            android:hint="Stream">
+
+            <Spinner
+                android:id="@+id/streamSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:popupBackground="@color/icons"
+                android:textColor="@color/primaryTextColor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txtProgram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Program:"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@id/DeptSelection"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/branchSelection"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/txtBranch"
+            android:background="@drawable/spinner_bg"
+            android:hint="Stream">
+            <Spinner
+                android:id="@+id/programspinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:popupBackground="@color/icons"
+                android:textColor="@color/primaryTextColor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txtBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Branch:"
+            android:layout_below="@id/DeptSelection"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/programSelection"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/txtProgram"
+            android:background="@drawable/spinner_bg"
+            android:hint="Stream">
+
+            <Spinner
+                android:id="@+id/branchSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:popupBackground="@color/icons"
+                android:textColor="@color/primaryTextColor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txtMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Medium:"
+            android:layout_below="@id/programSelection"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mediumSelection"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/txtMedium"
+            android:background="@drawable/spinner_bg"
+            android:hint="Medium">
+            <Spinner
+                android:id="@+id/mediumSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:popupBackground="@color/icons"
+                android:textColor="@color/primaryTextColor"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txtTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Term:"
+            android:layout_below="@id/DeptSelection"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/termSelection"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/txtTerm"
+            android:background="@drawable/spinner_bg"
+            android:hint="Term">
+            <Spinner
+                android:id="@+id/termSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:popupBackground="@color/icons"
+                android:textColor="@color/primaryTextColor"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Continue"
+        android:layout_below="@id/linearlayoout"
+        android:background="@drawable/button_design"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+
+</RelativeLayout>

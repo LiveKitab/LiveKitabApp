@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--<androidx.cardview.widget.CardView
+        android:id="@+id/reviewCard"
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="7dp"
+        android:elevation="7dp"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+
+
+        <ImageView
+            android:id="@+id/videoImg"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="7dp"
+            android:src="@drawable/v_logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:layout_toRightOf="@id/videoImg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/videotitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/userImg"
+                android:fontFamily="@font/seougui"
+                android:textColor="@color/black"
+                android:text="Abcd"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/videodescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@id/userImg"
+                android:fontFamily="@font/seougui"
+                android:text="Review"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <!-- </androidx.cardview.widget.CardView>-->
+</RelativeLayout>

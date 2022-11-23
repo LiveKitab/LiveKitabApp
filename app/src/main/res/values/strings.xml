@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">LiveKitab</string>
+    <string name="sign_up_text">Don\'t have an account? <u>Sign up here</u></string>
+    <string name="login_text">Already have an account? <u>Login</u></string>
+
+    <string name="terms"><u>Terms of use</u></string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="retry"><u>Retry</u></string>
+    <string name="purchaseagain"><u>Want to purchase again?</u></string>
+
+    <string name="purchasecourse">Want to purchase this course?<u>Click here</u></string>
+    <string name="default_notification_channel_id">111</string>
+    <string name="view_study"><u>View Study Material</u></string>
+    <string name="f_password"><u>forgot password?</u></string>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16dp</item>
+    </style>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

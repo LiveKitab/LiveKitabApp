@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".courses.course_semester">
+
+    <!-- TODO: Update blank fragment layout -->
+  <!--  <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recSemester"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" />-->
+      <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp" >
+
+    </androidx.viewpager.widget.ViewPager>
+    <HorizontalScrollView
+        android:id="@+id/horizontal"
+        android:layout_below="@id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none">
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/semester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text"
+        app:singleSelection="true"
+        app:chipStartPadding="3dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:paddingHorizontal="5dp"
+        android:fontFamily="@font/seougui"
+        app:chipCornerRadius="9dp"
+        android:foreground="?selectableItemBackground"
+        style="@style/Widget.MaterialComponents.Chip.Choice"
+        />
+    </HorizontalScrollView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recsubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontal"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

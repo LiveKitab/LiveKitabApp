@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CheckoutActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <TextView
+        android:id="@+id/subject_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Programiming for Peoblem Solving"
+        android:layout_below="@+id/toolbar"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp">
+
+    </TextView>
+    <TextView
+        android:id="@+id/subject_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Programiming for Peoblem Solving Description"
+        android:layout_below="@+id/subject_name"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/userratinglnr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/subject_desc">
+
+        <TextView
+            android:id="@+id/courserating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.7"
+            android:textColor="@color/yellow">
+        </TextView>
+        <RatingBar
+            android:id="@+id/courseRatingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:max="5"
+            android:layout_marginStart="8dp"
+            android:numStars="5"
+            android:progressTint="@color/yellow"
+            android:rating="2.7" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/enrollratinglnr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/userratinglnr">
+
+        <TextView
+            android:id="@+id/enrollrating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(40,386 rating)"
+           >
+        </TextView>
+        <TextView
+            android:id="@+id/enrollstudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="40,386 student">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/creatorlnr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/enrollratinglnr">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Created by"
+            android:layout_below="@+id/enrollratinglnr"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+           >
+
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/mentorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Created by"
+            android:layout_below="@+id/enrollratinglnr"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="4dp">
+
+
+        </TextView>
+
+
+    </LinearLayout>
+
+<FrameLayout
+    android:id="@+id/framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/creatorlnr"
+    android:layout_centerHorizontal="true">
+
+    <ImageView
+        android:id="@+id/previewImageView"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_google" />
+
+    <ImageView
+        android:id="@+id/imgPlaybtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_play_circle_24dp" />
+
+</FrameLayout>
+
+
+    <TextView
+        android:id="@+id/currentPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/framelayout"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/seougui"
+        android:text="200 ₹"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/oldPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/framelayout"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/currentPriceTextView"
+        android:fontFamily="@font/seougui"
+        android:text="250.30"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/priceAlertTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentPriceTextView"
+        android:layout_marginStart="16dp"
+        android:drawableLeft="@drawable/ic_timelapse_white_24dp"
+        android:drawablePadding="4dp"
+        android:fontFamily="@font/seougui"
+        android:text="90% off on this course Hurry up!"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buyNowButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_design"
+        android:fontFamily="@font/seougui"
+        android:text="Buy now"
+        android:layout_below="@+id/priceAlertTextView"
+        android:layout_toStartOf="@+id/wishlistButton"
+        android:layout_marginEnd="4dp"
+        android:textAlignment="center"
+        android:textColor="@color/icons"
+        android:layout_marginStart="8dp"
+        android:textSize="15sp"
+        app:cornerRadius="10dp"
+        app:elevation="3dp" />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

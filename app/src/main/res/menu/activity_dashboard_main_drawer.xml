@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+        <item
+            android:id="@+id/nav_my_course"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_wishList"
+            android:icon="@drawable/ic_wishlist"
+            android:title="Wishlist" />
+        <item
+            android:id="@+id/nav_purchase"
+            android:icon="@drawable/purchasedbook"
+            android:title="My Purchased Courses" />
+
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_rating"
+            android:title="Rating  &amp; Reviews" />
+
+    <group android:checkableBehavior="single"
+     android:id="@+id/group_divider">
+
+<!--        <item-->
+<!--            android:id="@+id/nav_profile"-->
+<!--            android:icon="@drawable/ic_user__1_"-->
+<!--            android:title="Profile" />-->
+
+        <item
+            android:id="@+id/nav_promo"
+            android:icon="@drawable/ic_promotion"
+            android:title="Promotions" />
+
+        <item
+            android:id="@+id/nav_Abount"
+            android:icon="@drawable/ic_about"
+            android:title="About us" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_setting"
+            android:title="Settings" />
+
+    </group>
+</menu>

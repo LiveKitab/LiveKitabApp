@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/white"
+        app:collapseIcon="@drawable/ic_arrow_back_24"
+        android:background="@drawable/header_background" />
+
+    <LinearLayout
+        android:id="@+id/helplnr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject        : "
+            android:fontFamily="@font/metropolis"
+            android:textColor="@color/black"
+            android:textSize="16dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/subjectedt"
+            android:layout_width="match_parent"
+            android:background="@drawable/edittext"
+            android:layout_height="50dp"
+            android:hint="Enter Subject Here"
+            android:textColor="@color/black">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/help1lnr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_below="@+id/helplnr"
+        android:layout_marginTop="16dp"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Attachment : "
+            android:fontFamily="@font/metropolis"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:textSize="16dp">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imgupload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:fontFamily="@font/metropolis"
+            android:padding="10dp"
+            android:src="@drawable/ic_file_upload_black_24dp"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:id="@+id/txtdoc"
+        android:layout_below="@+id/help1lnr"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/help2lnr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_below="@+id/txtdoc"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message      : "
+            android:fontFamily="@font/metropolis"
+            android:textColor="@color/black"
+            android:textSize="16dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/messageedt"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Enter Message Here"
+            android:background="@drawable/edittext"
+            android:textColor="@color/black">
+
+        </EditText>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Continue"
+        android:layout_below="@id/help2lnr"
+        android:background="@drawable/button_design"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

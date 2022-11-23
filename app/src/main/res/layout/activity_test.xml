@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Test.TestActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:titleTextColor="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp">
+
+            <Button
+                android:id="@+id/toolbar_overflow_abort_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="@font/metropolis"
+                android:text="Abort Test"
+                android:textColor="@color/icons" />
+
+            <Button
+                android:id="@+id/toolbar_overflow_menu_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="2"
+                android:fontFamily="@font/metropolis"
+                android:text="Submit Test"
+                android:textColor="@color/icons" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardtest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardMaxElevation="3dp"
+        app:cardElevation="5dp"
+        android:padding="5dp"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+
+
+            <!--<LinearLayout
+                android:id="@+id/lnrposmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lnrtotalquestion"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="4">
+
+              &lt;!&ndash;  <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="@color/primary_text"
+                    android:fontFamily="@font/metropolis"
+                    android:textSize="15sp"
+                    android:text="Positive Mark" />
+
+                <TextView
+                    android:id="@+id/txtposmark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/metropolis"
+                    android:text="0"
+                    android:textColor="@color/primary_text"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrnegmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lnrposmark"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="@color/primary_text"
+                    android:fontFamily="@font/metropolis"
+                    android:textSize="15sp"
+                    android:text="Negative Mark" />
+
+                <TextView
+                    android:id="@+id/txtnegmark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/metropolis"
+                    android:text="0"
+                    android:textColor="@color/primary_text"
+                    android:textSize="15sp" />&ndash;&gt;
+
+
+            </LinearLayout>-->
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardtest"
+        android:background="@color/colorPrimaryDark"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@android:color/holo_purple"
+        app:tabMode="scrollable"
+        app:tabTextColor="@android:color/white">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabLayout">
+
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>

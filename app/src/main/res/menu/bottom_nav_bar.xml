@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_bottom_home"
+        android:icon="@drawable/ic_home"
+        android:enabled="true"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_bottom_purchased"
+        android:icon="@drawable/purchasedbook"
+        android:enabled="true"
+        android:title="My Cources" />
+
+    <item
+        android:id="@+id/nav_bottom_learwithlivekkitab"
+        android:icon="@drawable/kitab"
+        android:enabled="true"
+        android:title="Kitab" />
+
+    <item
+        android:id="@+id/nav_feed"
+        android:icon="@drawable/feed"
+        android:enabled="true"
+        android:title="Feed" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_user"
+        android:enabled="true"
+        android:title="Profile" />
+
+
+
+
+
+</menu>

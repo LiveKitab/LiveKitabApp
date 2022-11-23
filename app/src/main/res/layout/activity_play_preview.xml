@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".courses.PlayPreview">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@android:color/white"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+<!--    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView-->
+<!--        android:id="@+id/youtube_player_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:visibility="visible"-->
+<!--        android:layout_height="300dp"-->
+<!--        app:autoPlay="false"-->
+<!--        app:showFullScreenButton="true"-->
+<!--        android:layout_below="@+id/toolbar"-->
+<!--        app:showYouTubeButton="false"-->
+<!--        app:useWebUi="false" />-->
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:autoPlay="false"
+        app:showFullScreenButton="true"
+        android:layout_below="@+id/toolbar"
+        app:showYouTubeButton="false" />
+
+    <!--        <ProgressBar-->
+<!--            android:id="@+id/progressBar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            />-->
+</RelativeLayout>

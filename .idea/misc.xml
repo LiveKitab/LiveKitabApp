@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/drawable/ic_arrow_back_24dp.xml" value="0.152" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout-v21/activity_payment.xml" value="0.1" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/activity_bottom_navigation.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/activity_change__profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/activity_chapter_study.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/activity_chapter_video_details.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/activity_course.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/activity_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/activity_mentor.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/activity_mentor_chapter.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/activity_my_purchases.xml" value="0.1" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/activity_register.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/activity_setting.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/activity_sign_in_with_email.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/activity_start_quiz.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/activity_studymaterialshow.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/activity_test.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/activity_view_course_video.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/chapter_video_rows.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/content_home_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/fragment_course_semester.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/fragment_feed.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/fragment_home_bottom_nav.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/fragment_live_kitab.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/layout_mentor.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/layout_mentorchapname.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/layout_purchasedsubjects.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/layout_study_material_video_rows.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/layout_subjects.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/layout/nav_header_dashboard_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/menu/activity_dashboard_main_drawer.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/Desktop/New folder/MyVideoBook/app/src/main/res/menu/dashboard_main.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

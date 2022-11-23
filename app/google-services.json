@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "706277600159",
+    "project_id": "myvideobook-85ed6",
+    "storage_bucket": "myvideobook-85ed6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706277600159:android:52592ed1a9dbae1bf8ebaa",
+        "android_client_info": {
+          "package_name": "com.zocarro.myvideobook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706277600159-ns8qjktbdqo3bad27lhqr4nd28uncg27.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgoLuGnCa5Ixtcbx56WCA06rXWRkadiXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706277600159-ns8qjktbdqo3bad27lhqr4nd28uncg27.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

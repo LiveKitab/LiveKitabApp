@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SettingActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/layout_group_chat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:theme="@style/Widget.AppCompat.Toolbar"
+                app:popupTheme="@style/Theme.AppCompat.Light">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:text="Profile"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/appBar"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageUSER"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/v_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/seougui"
+            android:gravity="center"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:text="Username"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/userselectedbranch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/userselectedbranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/seougui"
+            android:gravity="center"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:text="UserBranch"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="16dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/profile"
+        android:layout_marginTop="8dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:id="@+id/lnr1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1sp"
+            android:fontFamily="@font/robotoo"
+            android:text="Account"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/changeclass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnr1"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp">
+
+        <ImageView
+            android:id="@+id/changeclassImg"
+            android:layout_width="29dp"
+            android:layout_height="30dp"
+            android:src="@drawable/changeclass">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/changeclasstxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@+id/changeclassImg"
+            android:text="Change Class"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/changeclassImge1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </ImageButton>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/resetpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/changeclass"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp">
+
+        <ImageButton
+            android:id="@+id/chaptnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:fontFamily="@font/robotoo"
+            android:src="@drawable/ic_key_icom">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/chapter_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toStartOf="@+id/image"
+            android:layout_toEndOf="@+id/chaptnumber"
+            android:text="Change Password"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"></TextView>
+
+        <ImageButton
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </ImageButton>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/invoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resetpassword"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp">
+
+        <ImageButton
+            android:id="@+id/invoiceimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:fontFamily="@font/robotoo"
+            android:src="@drawable/ic_printer">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/invoicetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toStartOf="@+id/image"
+            android:layout_toEndOf="@+id/invoiceimg"
+            android:text="Invoice"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"></TextView>
+
+        <ImageButton
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </ImageButton>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txt24"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_below="@+id/resetpassword"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:text="Connect with us"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+    <LinearLayout
+        android:id="@+id/lnr12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt24"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/twitter">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:fontFamily="@font/robotoo"
+            android:text="Subscribe us on twitter"
+            android:textColor="@color/black">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnr2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/lnr12">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/instagram">
+
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotoo"
+            android:text="Follow us on Instagram"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginStart="32dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnr3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/lnr2">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/facebook">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/facebooktxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotoo"
+            android:text="Follow us on Facebook"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginStart="32dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnr4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnr3"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_phone">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:text="Contact us"
+            android:textColor="@color/black">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnfeeddback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnr4"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_feedback">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:text="Ratings and Review"
+            android:textColor="@color/black">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txt25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnfeeddback"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Account Acess"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/lnr5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt25"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnimg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txt25"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_log_out">
+
+        </ImageButton>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt25"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/btnimg"
+            android:fontFamily="@font/robotoo"
+            android:text="Logout"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
+

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zocarro.myvideobook">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".Controller.AppController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".BottomNavigation.BottomNavigationActivity"
+            android:exported="true" />
+<!--        <activity-->
+<!--            android:name=".BottomNavigation.HomeActivityBottomNavigation"-->
+<!--            android:exported="true" />-->
+        <activity android:name=".Activity.TrendingMentorsubjectActivity" />
+        <activity android:name=".Activity.SettingActivity" />
+        <activity android:name=".Activity.PaymentActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Activity.TrendingMentorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SupportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Wishlist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.CheckoutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.StudymaterialshowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ChapterStudyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.UpdatePassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ChapterTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ChapterVideoDetailsVerticalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ChapterVideoDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.MentorChapterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForgotPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.InvoiceWebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VideoCourse.VideoFullscreenActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Dashboard.UserFeedback"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dashboard.MentorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dashboard.HomeActivity"
+            android:screenOrientation="portrait" >
+
+        </activity>
+        <activity
+            android:name=".AboutUsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.NotificationsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".checksum"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyPurchases.PackageDetails"
+            android:label="Package Details"
+            android:parentActivityName=".MyPurchases.MyPurchasesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dashboard.Change_Preferance"
+            android:label="Change Prefrences"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dashboard.Change_Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyPurchases.BillActivity"
+            android:label="Detail Bill"
+            android:parentActivityName=".MyPurchases.MyPurchasesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Test.StartQuizActivity"
+            android:parentActivityName=".Dashboard.DashboardMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Test.TestResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Test.TestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Feedback.ViewFeedbacksActivity"
+            android:label="View Feedback"
+            android:parentActivityName=".Feedback.UserCoursesList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Feedback.UserCoursesList"
+            android:parentActivityName=".Dashboard.DashboardMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Feedback.FeedbackActivity"
+            android:label="Feedback"
+            android:parentActivityName=".Dashboard.DashboardMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SemesterPackage.PackageActivity"
+            android:label="Package Details"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyPurchases.MyPurchasesActivity"
+            android:label="My purchases"
+            android:parentActivityName=".Dashboard.DashboardMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectType"
+            android:label="Edit Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".courses.SemesterSelection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Registeration.UpdateProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VideoCourse.FullScreenVideoActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".VideoCourse.AttachmentView"
+            android:label="Attachment"
+            android:parentActivityName=".Dashboard.DashboardMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".courses.PlayPreview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FavouriteVideo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dashboard.SearchableActivity"
+            android:label="Serach Courses"
+            android:parentActivityName=".Dashboard.DashboardMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dashboard.DashboardMain"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TrendingVideo.AllTrendingCourses"
+            android:label="Trending Course"
+            android:parentActivityName=".Dashboard.DashboardMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Category.CategoryActivity"
+            android:label="Categories"
+            android:parentActivityName=".Dashboard.DashboardMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".courses.CourseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dashboard.DashBoardActivity"
+            android:parentActivityName=".Dashboard.DashboardMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Registeration.RegisterActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionTheme" />
+        <activity
+            android:name=".WishList.MyWishList"
+            android:label="Wishlist"
+            android:parentActivityName=".Dashboard.DashboardMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserCourses.Mycourse"
+            android:label="My courses"
+            android:parentActivityName=".Dashboard.DashboardMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Registeration.SignInWithEmailActivity"
+            android:hardwareAccelerated="false"
+            android:label="Sign in"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionTheme" />
+        <activity
+            android:name=".VideoCourse.ViewCourseVideo"
+            android:configChanges="keyboard|orientation|screenSize"
+            android:label="Video"
+            android:parentActivityName=".Dashboard.DashboardMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionTheme" />
+        <activity
+            android:name=".NoInternetActivity"
+            android:label="No internet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashScreen"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="true" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="true" />
+        <meta-data
+            android:name="google-signin-client_id"
+            android:value="730437060297-2faj0bvpf8nu117unkdf838b3s95me6p.apps.googleusercontent.com" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts"/>
+
+        <service android:name=".BottomNavigation.myFireBaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+<!--                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>-->
+            </intent-filter>
+        </service>
+
+<!--        <service-->
+<!--            android:name=".BottomNavigation.myFireBaseMessagingService">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+
+    </application>
+
+</manifest>

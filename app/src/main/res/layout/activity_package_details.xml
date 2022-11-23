@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MyPurchases.BillActivity">
+
+
+    <TextView
+        android:id="@+id/packageNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/seougui"
+        android:text="Package Name"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_text"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/packageImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/packagePriceTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/seougui"
+        android:text="Package price"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_text"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/packageImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/packageNameTextView" />
+
+    <TextView
+        android:id="@+id/packageDiscountTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/seougui"
+        android:text="5 % Discount"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_text"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/packageImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/packagePriceTextView" />
+
+    <TextView
+        android:id="@+id/transactionIdTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/seougui"
+        android:text="Transaction Id"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_text"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/packageDiscountTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/packageDiscountTextView" />
+
+    <TextView
+        android:id="@+id/transactionDateTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/seougui"
+        android:text="Transaction Date"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_text"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/packageDiscountTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transactionIdTextView" />
+
+    <ImageView
+        android:id="@+id/packageImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/v_logo"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/packageCourseRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/downloadInvoiceButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transactionDateTextView" />
+
+    <Button
+        android:id="@+id/downloadInvoiceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Download Invoice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
